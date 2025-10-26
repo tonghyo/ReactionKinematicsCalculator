@@ -1,0 +1,25 @@
+# Compiled Object files
+*.o
+
+# Executables
+fusion_reaction
+
+# ROOT files
+*.root
+
+# Build artifacts
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
