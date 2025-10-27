@@ -1,0 +1,48 @@
+# Example parameter file for fusion_reaction
+# Lines starting with # are comments. Format: key = value
+
+# Beam: Energy (MeV), A, Z
+beam = 142,25,13
+
+# Target: A,Z
+target = 2,1
+
+# Experimental parameters: E_loss, E_strag, E_beam_re, tar_res, th_res_deg
+experimental = 1.0,0.05,0.1,0.5,0.1
+
+# Products: list of A,Z,label separated by ';'
+products = 26,14,Si26; 1,0,n1
+
+# Multiple excited states (true/false)
+multiple_excited_states = true
+
+# Excited state energies (MeV) and branching ratios (must match length)
+excited_energies = 5.92,5.9,6.3,6.7
+excited_branching = 1.0,0.0,0.0,0.0
+heavy_A = 26
+heavy_Z = 14
+
+# (Optional) Decay settings
+enable_decay = true
+decay_products = 25,13,25Al; 1,1,p
+
+# (Optional) Reconstruction flags
+enable_mass_reconstruction = true
+enable_total_energy_reconstruction = false
+enable_energy_reconstruction = false
+
+# (Optional) Product reconstruction flags
+# select_product = Ti41,p1
+
+# (defualts = mass.dat) Mass table file
+mass_file = mass.dat
+
+# (defualts = 10000, true) Number of events and verbosity
+n_events = 10000
+verbose_events = true
+
+# (defualts = fusion_results.root) Output file
+output_file = fusion_results.root
+
+# If you want to skip drawing at the end (non-interactive)
+# no_draw = true
